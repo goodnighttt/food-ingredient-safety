@@ -1,5 +1,3 @@
-好的，以下是一个简化版的 **README** 文件，适合用作初步的项目介绍：
-
 ---
 
 # Food Ingredient Safety Checker
