@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="header">
+    <text class="title">食品成分检测</text>
+    <text class="subtitle">上传食品配料表，快速识别成分安全性</text>
+  </view>
+
+  <view class="upload-area" bindtap="chooseImage">
+    <block wx:if="{{!tempImagePath}}">
+      <image class="upload-icon" src="/images/camera.png"></image>
+      <text class="upload-text">点击上传图片</text>
+      <text class="upload-desc">请确保配料表清晰可见</text>
+    </block>
+    <image wx:else class="preview-image" src="{{tempImagePath}}" mode="aspectFit"></image>
+  </view>
+
+  <view class="button-area" wx:if="{{tempImagePath}}">
+    <button class="analyze-btn" type="primary" bindtap="analyzeImage">开始分析</button>
+    <button class="reupload-btn" bindtap="chooseImage">重新上传</button>
+  </view>
+</view>

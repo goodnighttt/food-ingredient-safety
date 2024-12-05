@@ -1,0 +1,1 @@
+"D:\Program Files\Tencent\微信web开发者工具\cli.bat" cloud functions deploy --e digital-6g3plmhhf3367562 --n quickstartFunctions --r --project "D:\Work\goodnighttt\小程序\食品安全成分查询" --report_first --report
